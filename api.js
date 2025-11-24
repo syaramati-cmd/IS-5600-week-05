@@ -6,6 +6,7 @@ function handleRoot(req, res) {
   res.json({ message: "Welcome to Fullstack Prints API!" });
 }
 
+
 /* PRODUCTS */
 async function listProducts(req, res) {
   res.json(await Products.list(req.query));
